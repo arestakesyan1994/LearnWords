@@ -22,7 +22,6 @@ public class EditWord extends AppCompatActivity {
     ContentValues contentValues;
     Cursor cursor;
     Button btnShow;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
