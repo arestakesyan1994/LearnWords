@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/border_items"
+    android:padding="15dp">
+
+    <ImageButton
+        android:id="@+id/speakEn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="35dp"
+        android:background="#00000000"
+        app:srcCompat="@drawable/ic_baseline_volume_up_24" />
+    <ImageButton
+        android:id="@+id/speakExample"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="145dp"
+        android:background="#00000000"
+        app:srcCompat="@drawable/ic_baseline_volume_up_24" />
+    <ImageButton
+        android:id="@+id/speakExampleVersion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="200dp"
+        android:background="#00000000"
+        app:srcCompat="@drawable/ic_baseline_volume_up_24" />
+
+<!--    <ImageButton-->
+<!--        android:id="@+id/speakEn"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentRight="true"-->
+<!--        android:layout_marginTop="15dp"-->
+<!--        android:background="#00000000"-->
+<!--        app:srcCompat="@drawable/ic_baseline_volume_up_24" />-->
+
+    <TextView
+        android:id="@+id/textEn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/english"
+        android:layout_marginTop="22dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginLeft="35dp"
+        android:textAlignment="center"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ffffff"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/textHy"
+        android:layout_marginRight="35dp"
+        android:layout_marginLeft="35dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textEn"
+        android:layout_marginTop="15dp"
+        android:hint="@string/armenia"
+        android:textAlignment="center"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#E3E3E3" />
+
+    <TextView
+        android:id="@+id/textEx"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textHy"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginLeft="35dp"
+        android:textAlignment="center"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:textStyle="italic" />
+    <TextView
+        android:id="@+id/enVersion"
+        android:layout_marginLeft="35dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textEx"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="35dp"
+        android:textAlignment="center"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:textStyle="italic" />
+
+    <ImageButton
+        android:id="@+id/edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:background="#00000000"
+        app:srcCompat="@drawable/ic_baseline_more_vert_24" />
+</RelativeLayout>

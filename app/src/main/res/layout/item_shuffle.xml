@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/border_item_how"
+    android:padding="15dp">
+     <TextView
+        android:id="@+id/showEn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/english"
+        android:layout_marginTop="30dp"
+        android:padding="5dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ffffff"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/showHy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="armenia"
+        android:layout_marginTop="5dp"
+        android:padding="5dp"
+        android:layout_below="@+id/showEn"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ffffff"
+        android:textSize="0dp" />
+
+    <TextView
+        android:id="@+id/showPron"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/showHy"
+        android:layout_marginTop="15dp"
+        android:text="@string/armenia"
+        android:textColor="#afba6b" />
+
+    <TextView
+        android:id="@+id/showEx"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/showPron"
+        android:layout_marginTop="5dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#4e4d4f"
+        android:text="@string/example"
+        android:textStyle="italic" />
+    <TextView
+        android:id="@+id/index"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#A50000"
+        android:layout_alignParentRight="true"
+        android:paddingRight="20dp"
+        android:textSize="15dp"
+        android:text="id" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/showEx"
+        android:layout_alignParentRight="true"
+        android:paddingRight="45dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/plus"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="#000000"
+            android:padding="10dp"
+            app:srcCompat="@drawable/ic_baseline_sentiment_satisfied_alt_24" />
+
+        <ImageButton
+            android:id="@+id/minus"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="#000000"
+            android:padding="10dp"
+            app:srcCompat="@drawable/ic_baseline_sentiment_very_dissatisfied_24" />
+    </LinearLayout>
+
+</RelativeLayout>
