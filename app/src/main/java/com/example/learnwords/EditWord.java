@@ -22,6 +22,7 @@ public class EditWord extends AppCompatActivity {
     ContentValues contentValues;
     Cursor cursor;
     Button btnShow;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -54,7 +55,7 @@ public class EditWord extends AppCompatActivity {
                 enVersion.setText(cursor.getString(versionIndex));
             } while (cursor.moveToNext());
         } else
-        cursor.close();
+            cursor.close();
 
         FloatingActionButton fab = findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
